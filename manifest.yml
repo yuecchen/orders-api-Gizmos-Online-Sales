@@ -2,9 +2,15 @@
 applications:
 - services:
   - myMicroservicesCloudant
-name: MicroservicesOrdersAPI
-buildpack: sdk-for-nodejs
-path: .
-instances: 1
-memory: 96M
-
+  name: MicroservicesOrdersAPI
+  buildpack: sdk-for-nodejs
+  path: .
+  instances: 1
+  memory: 96M
+  env:
+    MONITORING_SERVER_TYPE: BI
+    KNJ_ENABLE_TT: "true"
+    KNJ_SAMPLING: 1
+    APM_BM_GATEWAY_URL: http://169.44.167.140
+    APM_KEYFILE_PSWD: ccmR0cKs!
+    APM_KEYFILE_URL: http://jpython2.mybluemix.net/keyfile_140.p12

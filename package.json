@@ -6,12 +6,15 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "ibmapm":"0.1.x",
     "body-parser": "1.12.x",
     "cfenv": "1.0.x",
     "cloudant": "*",    
     "consolidate": "0.11.x",
     "cors": "2.5.x",
-    "express": "3.20.x",
+    "express": "3.20.x"
+  },
+  devDependencies":{
     "chai": "latest",
     "chai-as-promised": "latest",
     "colors": "latest",
@@ -28,7 +31,6 @@
   },
   "repository": {},
   "engines": {
-    "node": "0.10.38",
-    "npm": "2.1.1"
+    "node": "4.2.x"
   }
 }
